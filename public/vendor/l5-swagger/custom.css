@@ -1,0 +1,184 @@
+/* Custom styles for Swagger UI */
+
+/* Main container */
+.swagger-ui {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    max-width: 1460px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header */
+.swagger-ui .topbar {
+    background-color: #1a1a1a;
+    padding: 10px 0;
+}
+
+.swagger-ui .topbar .download-url-wrapper {
+    display: none;
+}
+
+/* API title */
+.swagger-ui .info .title {
+    color: #3b4151;
+    font-size: 36px;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* API description */
+.swagger-ui .info .description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3b4151;
+    margin: 20px 0;
+}
+
+/* Operation blocks */
+.swagger-ui .opblock {
+    border-radius: 4px;
+    margin: 0 0 15px;
+    border: 1px solid #000;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.swagger-ui .opblock .opblock-summary {
+    padding: 5px;
+}
+
+.swagger-ui .opblock .opblock-summary-method {
+    min-width: 100px;
+    text-align: center;
+    border-radius: 3px;
+    padding: 6px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    background: #4990e2;
+    color: #fff;
+}
+
+/* HTTP methods */
+.swagger-ui .opblock-get {
+    border-color: #61affe;
+    background: rgba(97,175,254,.1);
+}
+
+.swagger-ui .opblock-post {
+    border-color: #49cc90;
+    background: rgba(73,204,144,.1);
+}
+
+.swagger-ui .opblock-put {
+    border-color: #fca130;
+    background: rgba(252,161,48,.1);
+}
+
+.swagger-ui .opblock-delete {
+    border-color: #f93e3e;
+    background: rgba(249,62,62,.1);
+}
+
+/* Parameters section */
+.swagger-ui .parameters-container {
+    padding: 15px;
+}
+
+.swagger-ui .parameters-container .parameter__name {
+    font-family: monospace;
+    font-size: 14px;
+    font-weight: 600;
+    color: #3b4151;
+}
+
+.swagger-ui .parameters-container .parameter__type {
+    font-size: 12px;
+    color: #777;
+}
+
+/* Response section */
+.swagger-ui .responses-table {
+    padding: 15px;
+}
+
+.swagger-ui .responses-table .response-col_status {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.swagger-ui .responses-table .response-col_description {
+    font-size: 14px;
+}
+
+/* Schema section */
+.swagger-ui .model {
+    font-family: monospace;
+    font-size: 14px;
+}
+
+.swagger-ui .model-toggle {
+    top: 0;
+}
+
+/* Buttons */
+.swagger-ui .btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.swagger-ui .btn.execute {
+    background-color: #4990e2;
+    color: #fff;
+    border: none;
+}
+
+.swagger-ui .btn.execute:hover {
+    background-color: #417fcc;
+}
+
+/* Loading animation */
+.loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.loading-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .swagger-ui {
+        padding: 10px;
+    }
+
+    .swagger-ui .info .title {
+        font-size: 24px;
+    }
+
+    .swagger-ui .opblock .opblock-summary-method {
+        min-width: 80px;
+        font-size: 12px;
+    }
+}
