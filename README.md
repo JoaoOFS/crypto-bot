@@ -62,7 +62,7 @@ Um poderoso sistema web para gestão de investimentos multiplataforma com automa
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/financeiro360.git
+git clone https://github.com/seu-usuario/crypto-bot.git
 cd financeiro360
 ```
 
@@ -124,6 +124,3 @@ Este projeto está licenciado sob a licença MIT - veja o arquivo [LICENSE](LICE
 4. Push para a branch (`git push origin feature/AmazingFeature`)
 5. Abra um Pull Request
 
-## 📧 Suporte
-
-Para suporte, envie um email para seu-email@exemplo.com ou abra uma issue no GitHub.
